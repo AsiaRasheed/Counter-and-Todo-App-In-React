@@ -5,29 +5,31 @@ function Counter() {
 
   const mystyle = {
     color: "white",
-    backgroundColor: "gray",
+    backgroundColor: "#ffffff",
     textAlign: "center",
-    width: "700px",
-    border: "3px solid black",
+    width: "50vw",
     marginLeft: "360px",
     marginTop: "50px",
     borderRadius: "10px",
+    boxShadow: "0 0 10px rgba(0, 0, 0, 0.4)",
+
   };
   return (
     <div>
-      <div>
+      
+      <div style={mystyle}>
+      
         <h1
           style={{
             color: "black",
             fontWeight: "bolder",
             textAlign: "center",
-            marginTop: "30px",
-          }}
+            margin: '10px !important',
+                      }}
         >
           Counter App
         </h1>
-      </div>
-      <div style={mystyle}>
+    
         <button
           style={{ margin: "30px", fontWeight: "bolder" }}
           onClick={() => setCount(count + 1)}
@@ -55,7 +57,7 @@ function Counter() {
           Reset
         </button>
 
-        <h1>{count}</h1>
+        <h1 style={{color:"black"}}>{count}</h1>
       </div>
     </div>
   );
