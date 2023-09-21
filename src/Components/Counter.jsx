@@ -8,14 +8,13 @@ function Counter() {
     backgroundColor: "#ffffff",
     textAlign: "center",
     width: "50vw",
-    marginLeft: "360px",
     marginTop: "50px",
     borderRadius: "10px",
     boxShadow: "0 0 10px rgba(0, 0, 0, 0.4)",
 
   };
   return (
-    <div>
+    <div className="container">
       
       <div style={mystyle}>
       
